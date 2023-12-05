@@ -93,9 +93,17 @@ background-color: #555;
         }
 
         .button-link {
-        display: block;
-        text-align: center;
-        margin-top: 20px;
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .submitbutton {
+            border: none;
+            padding: 8px 15px;
+            color: #ffffff;
+            background-color: rgb(96, 126, 158);
+            border-radius: 25px;
         }
 
         .button {
@@ -112,12 +120,18 @@ background-color: #555;
         }
 
         .thank-you-container {
-        margin-top: 20px;
+        margin-top: 100px;
+        text-align: center;
+        margin-bottom: 250px;
+        }
+
+        h2 span {
+            color: #964c4c;
         }
 
         footer {
-            background-color: #e8e3e3;
-            color: #0c0c0c;
+            background-color: #366041;
+            color: #ffffff;
             text-align: left;
             padding: 10px;
         }
@@ -154,13 +168,16 @@ background-color: #555;
 
     .footer-nav a {
         text-decoration: none;
-        color: #333; /* Adjust the link color as needed */
-        font-weight: bold;
+        color: #ffffff; /* Adjust the link color as needed */
+        font-weight: 500;
+        font-size: 14px;
     }
 
     /* Contact Information styles */
     .footer-contact p {
         margin: 5px 0;
+        font-size: 14px;
+        color: #ffffff;
     }
 
 </style>
@@ -182,14 +199,11 @@ background-color: #555;
 
 <body>
     <div class="thank-you-container">
-        <h2>Thank you for your submission!</h2>
+        <img src="https://i.ibb.co/RHDJ1g7/pngimg-com-cat-PNG50426.png" alt="cat" width="200px">
+        <h2><span>Thank you</span> for your submission<span>!</span></h2>
+        <a href="contact-us.html" class="button-link">
+            <button class="submitbutton">Submit another form</button></a>
     </div>
-
-            <div>
-                <a href="contact-us.html" class="button-link">
-                    <button>Submit another form!</button>
-                </a>
-            </div>
             
     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
@@ -200,7 +214,7 @@ background-color: #555;
     <div class="footer-container">
         <!-- Logo -->
         <div class="footer-logo">
-            <img src="https://i.ibb.co/r6zTD1X/wooflogo.png" alt="logo" width=100% height="auto"> <!-- Insert path to image link here -->
+            <img src="https://i.ibb.co/j3pjF5L/lougo.png" alt="logo" width=100% height="auto"> <!-- Insert path to image link here -->
         </div>
 
         <!-- Navigation Links -->
