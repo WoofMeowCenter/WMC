@@ -58,51 +58,62 @@
         p {
             margin: 0;
         }
-
         .footer-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 
-        /* Logo styles */
-        .footer-logo img {
-            max-width: 150px; /* Adjust the max-width as needed */
-            height: auto;
-        }
+    /* Logo styles */
+    .footer-logo img {
+        max-width: 150px; /* Adjust the max-width as needed */
+        height: auto;
+    }
 
-        /* Navigation Links styles */
-        .footer-nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-        }
+    /* Navigation Links styles */
+    .footer-nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
 
-        .footer-nav li {
-            margin-right: 20px;
-        }
+    .footer-nav li {
+        margin-right: 20px;
+    }
 
-        .footer-nav a {
-            text-decoration: none;
-            color: #ffffff; /* Adjust the link color as needed */
-            font-weight: 500;
-            font-size: 14px;
-        }
+    .footer-nav a {
+        text-decoration: none;
+        color: #ffffff; /* Adjust the link color as needed */
+        font-weight: 500;
+        font-size: 14px;
+    }
 
-        /* Contact Information styles */
-        .footer-contact p {
-            margin: 5px 0;
-            font-size: 14px;
-            color: #ffffff;
+    /* Contact Information styles */
+    .footer-contact p {
+        margin: 5px 0;
+        font-size: 14px;
+        color: #ffffff;
+    }
+
+        .appheader {
+            background-color: #627b98;
+            text-align: center;
+            padding-bottom: 20px;
+            padding-top: 50px;
         }
 
         /* Form Section Styles */
-        h1, h2 {
-            color: #333;
+        h2 {
+            color: rgb(188, 105, 75);
             text-align: center; 
+        }
+
+        h1 {
+            color: #e3ebf4;
+            font-size: 50px;
         }
 
         p {
@@ -111,11 +122,11 @@
 
         form {
             max-width: 600px;
-            margin: 20px auto;
+            margin: 30px auto;
             background-color: #fff;
             padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            border-radius: 30px;
+            border-style: solid;
         }
 
         label {
@@ -129,20 +140,26 @@
         input[type="email"],
         textarea {
             width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
+            padding: 8px;
+            margin-bottom: 10px;
             border-radius: 3px;
             box-sizing: border-box;
+            background-color: #f0f0f0;
+            border:none;
+        }
+
+        .submit-button {
+            text-align: center;
         }
 
         input[type="submit"] {
-            background-color: #333;
+            background-color: #964c4c;
             color: #fff;
-            padding: 10px 20px;
+            padding: 8px 15px;
             border: none;
-            border-radius: 5px;
+            border-radius: 25px;
             cursor: pointer;
+
         }
 
         input[type="submit"]:hover {
@@ -164,41 +181,46 @@
         <a href="ApplicationForm.html"><button>Adoption Application</button></a>
     </section>
 
-    <h1>Pet Adoption Application</h1>
-    <p>Please provide your personal information and answer the following questions to apply for pet adoption:</p>
+    <div class="appheader">
+        <p> </p><br>
+        <h1>Pet Adoption Application</h1>
+    </div>
 
-    <form action="submit.php" method="post">
-        <!-- Contact Information Section -->
-        <h2>Contact Information</h2>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
+    <section class="formcontainer">
+        <form action="submit.php" method="post">
+            <p>Please provide your personal information and answer the following questions to apply for pet adoption:</p><br>
+            <!-- Contact Information Section -->
+            <h2>Contact Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
 
-        <label for="address">Address:</label>
-        <input type="text" id="address" name="address" required><br><br>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required><br><br>
 
-        <label for="number">Phone Number:</label>
-        <input type="tel" id="number" name="number" required><br><br>
+            <label for="number">Phone Number:</label>
+            <input type="tel" id="number" name="number" required><br><br>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
 
-        <!-- Pet Adoption Questions Section -->
-        <h2>Pet Adoption Details</h2>
-        <label for="experience">Experience with owning pets:</label><br>
-        <textarea id="experience" name="experience" rows="4" cols="75" required></textarea><br><br>
+            <!-- Pet Adoption Questions Section -->
+            <h2>Pet Adoption Details</h2>
+            <label for="experience">Experience with owning pets:</label>
+            <textarea id="experience" name="experience" rows="4" cols="75" required></textarea><br><br>
 
-        <label for="reason">Why do you want to adopt a pet?</label><br>
-        <textarea id="reason" name="reason" rows="4" cols="75" required></textarea><br><br>
+            <label for="reason">Why do you want to adopt a pet?</label>
+            <textarea id="reason" name="reason" rows="4" cols="75" required></textarea><br><br>
 
-        <label for="atmosphere">Describe your home atmosphere:</label><br>
-        <textarea id="atmosphere" name="atmosphere" rows="4" cols="75" required></textarea><br><br>
+            <label for="atmosphere">Describe your home atmosphere:</label>
+            <textarea id="atmosphere" name="atmosphere" rows="4" cols="75" required></textarea><br><br>
 
-        <label for="petName">Name of pet you would like to adopt:</label><br>
-        <textarea id="petName" name="petName" rows="2" cols="75" required></textarea><br><br>
+            <label for="petName">Name of pet you would like to adopt:</label>
+            <textarea id="petName" name="petName" rows="1" cols="75" required></textarea><br><br>
 
-        <!-- Submit Button -->
-        <input type="submit" value="Submit Application">
-    </form>
+            <!-- Submit Button -->
+            <div class=submit-button><input type="submit" value="Submit Application"></div>
+        </form>
+    </section>
 
     <footer>
         <div class="footer-container">
