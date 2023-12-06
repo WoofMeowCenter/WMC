@@ -23,12 +23,15 @@ body {
 
 .profileheader {
     background-color: rgb(195, 113, 84);
+    padding-bottom: 15px;
+    padding-top: 78px;
+    padding-left: 50px;
 }
 
-.headertext {
+h1 {
+    color: rgb(247, 237, 228);
     font-size: 50px;
-    margin-left: 50px;
-}
+} 
 
 .animal-profile {
     width: 300px;
@@ -37,7 +40,7 @@ body {
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 25px; /* Margin between cards */
-    border-radius: 50px;  
+    border-radius: 35px;  
     box-sizing: border-box; /* Include padding and border in the element's total width */
     text-align: center; 
     font-size: 14px;
@@ -52,6 +55,7 @@ form {
     display: flex;
     justify-content: left;
     padding-top: 20px;
+    flex-wrap: wrap;
     margin: 23px;
 }
 
@@ -69,7 +73,7 @@ form {
 
 .cta-button {
     display: block; /* Changed to block to allow margin auto to center the button */
-    padding: 10px 20px;
+    padding: 8px 15px;
     background-color: rgb(96, 126, 158);
     color: #ffffff;
     text-decoration: none;
@@ -152,10 +156,8 @@ footer {
 </section>
 
     <div class="profileheader">
-        <div class="headertext">
-            <p> </p><br>
-            <p><strong>Available Pets</strong></p>
-        </div>
+            <p> </p>
+            <h1>Available Pets</h1>
     </div>
     
     <script>
@@ -214,7 +216,7 @@ footer {
         <section class="animal-profile" data-species="other">
             <img src="assets/images/rabbit1.jpg" alt="Rabbit 1">
             <h2><a href="HOPPY.html" class="namebutton">Hoppy</a></li></h2>
-            <p>Gender: Female</p>
+            <p>Gender: Male</p>
             <p>Status: Available</p>
             <p>Species: Rabbit</p>
             <a href="ApplicationForm.html" class="cta-button">Apply to Adopt</a>
@@ -223,7 +225,7 @@ footer {
         <section class="animal-profile" data-species="other">
             <img src="assets/images/rabbit2.jpg" alt="Rabbit 2">
             <h2><a href="THUMPER.html" class="namebutton">Thumper</a></li></h2>
-            <p>Gender: Male</p>
+            <p>Gender: Female</p>
             <p>Status: Available</p>
             <p>Species: Rabbit</p>
             <a href="ApplicationForm.html" class="cta-button">Apply to Adopt</a>
